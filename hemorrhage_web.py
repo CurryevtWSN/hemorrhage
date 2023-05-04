@@ -53,10 +53,10 @@ st.sidebar.markdown('##### For communication and cooperation, please contact wsh
 # Pathology_type =map[Pathology_type]
 # 数据读取，特征标注
 #%%load model
-ab_model = joblib.load(r'E:\Spyder_2022.3.29\output\machinel\wsn_output\subarachnoid_hemorrhagemlp_model.pkl')
+ab_model = joblib.load('subarachnoid_hemorrhagemlp_model.pkl')
 
 #%%load data
-hp_train = pd.read_csv(r'F:\文献\大五下学期\MMiC机器学习算法\MMIC数据机器学习算法临床预测模型\train.csv')
+hp_train = pd.read_csv('train.csv')
 features =["age","mingcs","gcsmotor","gcsverbal",'gcseyes','heartrate','sysbp','resprate','tempc',
             'spo2','aniongap','bicarbonate','creatinine','glucose','potassium','sodium','wbc','rbc',
             'ph','nely']
